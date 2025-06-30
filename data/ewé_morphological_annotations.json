@@ -1,0 +1,15 @@
+[
+  {
+    "mot": "dɔ",
+    "radical": "dɔ",
+    "forme": "verbe",
+    "temps": ["présent", "passé"],
+    "aspect": ["perfectif", "imperfectif"]
+  },
+  {
+    "mot": "ame",
+    "radical": "ame",
+    "forme": "nom",
+    "nombre": "singulier"
+  }
+]

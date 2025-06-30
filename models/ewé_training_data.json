@@ -1,0 +1,10 @@
+[
+  {
+    "text": "Ame dɔ nyuie.",
+    "tokens": [
+      {"text": "Ame", "pos": "NOUN"},
+      {"text": "dɔ", "pos": "VERB"},
+      {"text": "nyuie", "pos": "ADJ"}
+    ]
+  }
+]

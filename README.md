@@ -1,102 +1,83 @@
-# LexLangM
-# LexLangE
-# 📚 Base Lexicale Publique – Langue Mina
+# 🌍 LexLang – Base Lexicale pour les Langues Africaines (Éwé & Mina)
 
-Projet numérique collaboratif visant à documenter, structurer et diffuser un lexique de base pour la langue Mina, dans le but de la rendre exploitable par les outils d’intelligence artificielle, les applications éducatives, et les projets linguistiques.
+LexLangM est une base de données lexicale publique et modulaire destinée à fournir des ressources linguistiques de qualité pour le **traitement automatique des langues africaines**, notamment **l’éwé** et **le mina**. Le projet vise à faciliter le développement d'outils NLP (Natural Language Processing) adaptés aux réalités linguistiques du continent africain.
 
 ---
 
-## 🧭 Objectifs
+## 📁 Structure du dépôt
 
-- 📖 Rendre accessible la langue Mina sous format structuré (CSV/JSON)
-- 🤖 Faciliter l'intégration dans des outils de NLP, TTS, ASR, IA
-- 🧑‍🏫 Soutenir l’enseignement et l’apprentissage de la langue
-- 🌍 Valoriser le patrimoine linguistique local à travers les outils numériques
+lexlang/
+├── data/
+│ ├── lexical_list/ # Listes lexicales de base (CSV)
+│ ├── morphological_annotations/ # Annotations morphologiques (JSON)
+│ ├── translations/ # Traductions multilingues (FR, EN)
+├── models/
+│ ├── training_data/ # Jeux de données d'entraînement (JSON)
+│ ├── nlp_pipelines/ # Pipelines NLP (spaCy, Transformers)
+├── scripts/ # Scripts d’annotation et d’intégration
+├── docs/ # Documentation technique et communautaire
+├── README.md # Présentation du projet
+└── LICENSE # Licence open source
 
----
 
-## 🗃️ Contenu du dépôt
-
-| Fichier / dossier        | Description |
-|--------------------------|-------------|
-| `lexique.csv`            | Fichier principal contenant les mots, traductions, exemples |
-| `README.md`              | Ce document |
-| `LICENCE.txt`            | Licence libre de réutilisation (Creative Commons) |
-| `audio/` _(optionnel)_   | Prononciations audio des mots en `.mp3` |
-| `formulaire_contribution.md` | Lien vers un formulaire Google Forms pour contribuer |
-| `scripts/` _(optionnel)_ | Scripts d’import ou de traitement (Python) |
-| `metadata.json` _(optionnel)_ | Métadonnées techniques du corpus |
 
 ---
 
-## 📦 Structure du fichier `lexique.csv`
+## 🎯 Objectifs
 
-Chaque ligne correspond à un mot ou une expression.  
-Colonnes :
-
-| Champ               | Description |
-|---------------------|-------------|
-| `mot`               | Mot ou expression en [Nom de la langue] |
-| `prononciation`     | Transcription phonétique (optionnelle, format IPA) |
-| `catégorie`         | Nature grammaticale (nom, verbe, adjectif, etc.) |
-| `traduction_fr`     | Traduction en français |
-| `exemple`           | Phrase d’exemple dans la langue avec traduction |
-| `variante`          | Variante dialectale si existante |
+- Construire un **socle lexical fiable** pour les langues éwé et mina.
+- Fournir des **données réutilisables par les IA** pour la traduction, l’analyse morphologique, la reconnaissance d’entités, etc.
+- Favoriser une **communauté de développement linguistique open source** autour des langues africaines.
+- Soutenir la **recherche académique** et les initiatives locales en IA et linguistique computationnelle.
 
 ---
 
-## 🎧 Audio (si applicable)
+## 🚀 Cas d’usage possibles
 
-Les fichiers audio sont disponibles dans le dossier `/audio`, au format `.mp3`, nommés selon le mot principal :  
-`mot.mp3`, ex. : `agbé.mp3`
+- Entraînement de **modèles multilingues** pour le traitement de texte (NLP).
+- Intégration dans des systèmes de **traduction automatique**, chatbots ou assistants vocaux.
+- Développement d’outils pédagogiques et linguistiques pour l’éducation.
 
-Chaque audio correspond à une prononciation par un locuteur natif.
+---
+
+## 🧪 Technologies compatibles
+
+- Python 3.9+
+- [spaCy](https://spacy.io/)
+- [HuggingFace Transformers](https://huggingface.co/)
+- JSON, CSV, XML
 
 ---
 
 ## 🤝 Contribuer
 
-Vous pouvez contribuer de deux façons :
+Nous accueillons les contributions de :
 
-1. Via le [formulaire de proposition de mots](https://docs.google.com/forms/d/xxxxx)
-2. Par **Pull Request** directement sur GitHub (fork + modification du fichier `lexique.csv`)
+- **Locuteurs natifs** pour enrichir le lexique
+- **Linguistes** pour l’analyse grammaticale et morphologique
+- **Développeurs NLP** pour l’optimisation des pipelines
+- **Chercheurs** et institutions pour validation scientifique
 
-Merci de respecter les règles suivantes :
-- Orthographe standardisée
-- Une seule ligne par mot
-- Ne pas modifier les colonnes structurelles
-
----
-
-## 🧪 Exemples d'utilisation
-
-- Entraîner des modèles de reconnaissance vocale (Whisper, VOSK)
-- Alimenter des IA éducatives (chatbots, quiz, dictionnaires)
-- Créer des applications mobiles d’apprentissage linguistique
-- Enrichir les moteurs de recherche ou transcription automatique
+Consulte la page [`docs/contributions.md`](docs/contributions.md) pour en savoir plus.
 
 ---
 
-## ⚖️ Licence
+## 📜 Licence
 
-Le projet est sous licence **Creative Commons Attribution 4.0 International (CC BY 4.0)**  
-Vous pouvez librement :
-- Partager — copier, distribuer, transmettre
-- Adapter — remixer, transformer, créer à partir du corpus
-
-À condition de ShadowDalia du projet.
+Ce projet est distribué sous licence **MIT**. Tu es libre de l’utiliser, modifier et redistribuer, tant que la source est créditée.
 
 ---
 
-## 📢 Contacts & Remerciements
+## ✨ Rejoindre le projet
 
-**Coordinateur du projet** : [Votre nom / pseudo GitHub]  
-📧 Contact : shadowdalia@proton.me  
-🌐 Lien de présentation : [site, TikTok, Instagram, etc.]
+Tu peux :
+- Proposer une amélioration
+- Signaler un bug
+- Soumettre un fichier lexical
 
-Un grand merci à tous les locuteurs, linguistes, développeurs, et contributeurs qui participent à la préservation et valorisation de la langue Mina.
+📧 Contact : [lexlang@opensource.africa] (remplacer par ton adresse officielle)
 
 ---
 
-> _"Une langue qui n’est pas codée est une langue qui disparaît du numérique."_  
-> **Soutenons nos langues. Numérisons-les. Apprenons-les.**
+## 🌍 Une initiative pour faire entrer les langues africaines dans l'ère de l'intelligence artificielle.
+

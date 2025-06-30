@@ -1,0 +1,10 @@
+[
+  {
+    "text": "Abɔ ga nɔvi.",
+    "tokens": [
+      {"text": "Abɔ", "pos": "NOUN"},
+      {"text": "ga", "pos": "VERB"},
+      {"text": "nɔvi", "pos": "ADJ"}
+    ]
+  }
+]

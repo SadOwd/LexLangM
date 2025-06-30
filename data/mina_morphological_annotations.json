@@ -1,0 +1,14 @@
+[
+  {
+    "mot": "abɔ",
+    "radical": "abɔ",
+    "forme": "nom",
+    "nombre": "singulier"
+  },
+  {
+    "mot": "ga",
+    "forme": "verbe",
+    "temps": ["présent"],
+    "polarité": ["affirmatif", "négatif"]
+  }
+]
